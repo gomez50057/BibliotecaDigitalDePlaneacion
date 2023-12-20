@@ -1,0 +1,1284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+/* .body {
+  user-select: none;
+} */
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#F5F3F5, #f5f3f5b2);
+  /*GridLines*/
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.subtitulo,
+.homeh2,
+.featuredh2 {
+  color: #691B31;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.containerSubTi,
+.containerSubTiDoc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .containerSubTiDoc {
+    margin-bottom: 20px;
+  }
+}
+
+/*  */
+/* home */
+/*  */
+.home,
+.AboutUs {
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid-demo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 150vh;
+}
+
+.grid-demo .ImgBanda img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 159vh;
+  width: auto;
+  z-index: -1;
+}
+
+@media screen and (max-width: 550px) {
+  .grid-demo .ImgBanda img {
+    height: 159vh;
+    width: auto;
+    left: -8vw;
+  }
+}
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logotipo img {
+  position: absolute;
+  top: 2.5vw;
+  width: 550px;
+  height: auto;
+}
+
+.homeText img {
+  position: absolute;
+  top: 50%;
+  right: 2.5vw;
+  width: 40%;
+  height: auto;
+  transform: translateY(-50%);
+}
+
+.home-button {
+  background-color: #BC955B;
+  width: 150px;
+  height: 25px;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 2.5vw;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.homeh3 {
+  color: #691B31;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  font-size: 22px;
+}
+
+.homeh2 {
+  margin: 0;
+  font-size: 26px;
+  width: 55vw;
+}
+
+@media screen and (max-width: 550px) {
+  .homeText img {
+    position: absolute;
+    top: 30%;
+    right: 5vw;
+    width: 90%;
+    height: auto;
+    transform: translateY(-50%);
+  }
+
+  .logotipo img {
+    width: 360px;
+  }
+
+  .logotipo img,
+  .home-button {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logotipo img {
+    top: 15vw;
+  }
+
+  .home-button {
+    width: 60vw;
+    height: 35px;
+    border-radius: 40px;
+    top: 150vw;
+    right: 0;
+
+  }
+
+  .homeh3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .homeh2 {
+    font-size: 20px;
+    width: 99vw;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .home span {
+    display: block;
+  }
+}
+
+/*  */
+/* About Us */
+/*  */
+
+.AboutUs {
+  display: flex;
+  align-items: center;
+}
+
+.AboutUsIMG,
+.AboutUstxt {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  height: auto;
+}
+
+.AboutUsIMG img {
+  width: 400px;
+  height: auto;
+}
+
+.AboutUstxt {
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutUstxt p {
+  color: #6F7271;
+  text-align: justify;
+  padding: 0 3vw 0 3vw;
+  font-size: 16px;
+}
+
+.AboutUstxt p span{
+  font-weight: 600;
+}
+
+
+
+.contadorlibros p:first-child {
+  font-size: 50px;
+}
+
+.contadorlibros p {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #6F7271;
+}
+
+.contadorlibros img {
+  width: 350px;
+}
+
+.contadorlibros {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+
+@media screen and (max-width: 550px) {
+  .subtitulo {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .AboutUs {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .AboutUsIMG img {
+    width: 250px;
+  }
+
+  .AboutUstxt p {
+    width: 80vw;
+    font-size: 12px;
+  }
+
+  .contadorlibros img {
+    width: 200px;
+  }
+}
+
+/*  */
+/* featured */
+/*  */
+
+
+.featured {
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  /* Para ocultar los elementos fuera del contenedor */
+
+}
+
+.featured .containerFeatured {
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.featured .item {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.featured .item img {
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  border-radius: 6%;
+  z-index: 20;
+  transition: transform 0.5s, margin 0.5s, filter 0.5s;
+}
+
+.featured .item:hover {
+  transform: scale(1.2) rotateY(0deg);
+}
+
+.featured .item img:hover {
+  filter: brightness(1.2);
+  /* Ajustar el brillo al pasar el ratón */
+}
+
+.featured .item:not(:hover) {
+  transform: rotateY(60deg);
+  /* Giro de 60 grados para el efecto 3D */
+}
+
+.featuredh2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .featured {
+    height: 40vh;
+    justify-content: flex-start;
+  }
+
+  .featured .containerSubTi {
+    padding-top: 40px;
+  }
+
+  .featured .item {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .featured .item img {
+    width: 120px;
+    height: auto;
+    margin: 5vh -15px 0 -15px;
+    transition: transform 0.5s, margin 0.5s, filter 0.5s;
+  }
+
+  .featured .item:hover {
+    transform: scale(1.2) rotateY(0deg);
+  }
+
+  .featured .item:not(:hover) {
+    transform: rotateY(60deg);
+  }
+}
+
+
+
+/*  */
+/* Foouter */
+/*  */
+
+.foouter {
+  background-size: cover;
+  background-position: top;
+  width: 100vw;
+  height: 25vh;
+  border-radius: 50px 50px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.foouter .foouterLogo img {
+  width: 550px;
+  height: auto;
+}
+
+.fooutertxt {
+  width: auto;
+  color: #fff;
+}
+
+.foouter span {
+  display: block;
+}
+
+.fooutertxt h1,
+.fooutertxt h2,
+.fooutertxt p {
+  margin: 0;
+  padding: 0;
+}
+
+.fooutertxt h1 {
+  font-size: 18px;
+}
+
+.fooutertxt h2,
+.fooutertxt p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.FoouterUbicacion {
+  display: flex;
+  align-items: center;
+}
+
+.FoouterUbicacion img {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.foouterBar {
+  position: absolute;
+  width: 5px;
+  height: 80px;
+  margin-left: -10px;
+  background: linear-gradient(to left, #BC955B, #BC955B 50%, transparent 50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  /* Ajusta la opacidad y el tamaño de la sombra según sea necesario */
+}
+
+@media screen and (max-width: 550px) {
+  .foouter {
+    height: 15vh;
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .foouterBar {
+    display: none;
+  }
+
+  .fooutertxt {
+    display: flex;
+    align-items: center;
+  }
+
+  .foouterInfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .foouter .foouterLogo img {
+    width: 350px;
+    height: auto;
+  }
+
+  .fooutertxt h1 {
+    font-size: 10px;
+  }
+
+  .fooutertxt h2,
+  .fooutertxt p {
+    font-size: 8px;
+  }
+
+  .FoouterUbicacion img {
+    width: 10px;
+  }
+}
+
+/*  */
+/* Controls */
+/*  */
+
+.controls {
+  position: relative;
+  top: 5vh;
+  width: 60vw;
+  margin-left: 20vw;
+  font-size: 19px;
+}
+
+.control {
+  position: relative;
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+@media (max-width: 600px) {
+  .controls {
+    top: 2vh;
+  }
+
+  .control {
+    float: none;
+    width: auto;
+    margin: 0 0 15px 0;
+  }
+}
+
+.control-icon {
+  position: absolute;
+  left: -5px;
+  top: -4px;
+  width: 45px;
+  height: 45px;
+  background-color: #691B31;
+  color: #DDC9A3;
+  border-radius: 50%;
+  line-height: 45px;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.control-field {
+  position: relative;
+  padding-left: 40px;
+  z-index: 1;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 26px;
+  background: #DDC9A3;
+  border: 2px solid #DDC9A3;
+  border-radius: 20px;
+  color: #691B31;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+select.form-control {
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+select.form-control::-ms-expand {
+  display: none;
+}
+
+.select-arrow {
+  position: absolute;
+  color: #691B31;
+  right: 10px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.form-control:focus {
+  outline: 0;
+  border-color: #691B31;
+}
+
+.control-field {
+  position: relative;
+  padding-left: 40px;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v29/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format("woff2");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+.material-icons {
+  display: inline-block;
+  vertical-align: top;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.book-card-container {
+  width: 135px;
+  height: 200px;
+  margin: 10px;
+  z-index: 1;
+}
+
+.muuri {
+  width: 100%;
+  padding: 10px;
+}
+
+.book-card-container.muuri-item-releasing {
+  z-index: 2;
+}
+
+.book-card-container.muuri-item-dragging {
+  z-index: 3;
+}
+
+ul {
+  list-style: none;
+}
+
+a img {
+  border: none;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+.book-card {
+  display: block;
+  position: relative;
+  width: auto;
+  height: 100%;
+  padding: 0.3125em;
+  cursor: pointer;
+  background: white;
+  border-radius: 0.15625em;
+  transition: box-shadow 0.2s;
+}
+
+.book-card:hover {
+  z-index: 5;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3), 0 0 0 4px hsla(0, 0%, 100%, 0.795),
+    0 0 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.book-card__name {
+  z-index: 1;
+  position: relative;
+  height: 1.5625em;
+  width: 70%;
+  margin: -1.09375em 15% 0;
+  text-align: center;
+  background: white;
+  font-size: 65%;
+}
+
+.book-card__name span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: 0.418em;
+  display: block;
+  font-size: 1em;
+  color: #6F7271;
+}
+
+.book-card__name svg {
+  display: block;
+  position: absolute;
+  top: 0.015em;
+  height: 1.3125em;
+  width: 1.3125em;
+  overflow-y: hidden;
+  fill: white;
+}
+
+.book-card__name svg.left {
+  left: -1.25em;
+}
+
+.book-card__name svg.right {
+  right: -1.25em;
+}
+
+.book-card__pokedex-year {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  top: 0.125em;
+  left: 50%;
+  margin-left: -1.25em;
+  width: 1.875em;
+  height: 1.09375em;
+  text-align: center;
+  background: white;
+}
+
+.book-card__pokedex-year span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.6875em;
+  color: black;
+}
+
+.book-card__pokedex-year svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 1.09375em;
+  width: 1.09375em;
+  fill: white;
+}
+
+.book-card__pokedex-year svg.left {
+  right: 99%;
+}
+
+.book-card__pokedex-year svg.right {
+  left: 99%;
+}
+
+.book-card__image {
+  z-index: 1;
+  position: relative;
+  padding-bottom: 110%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: yellowgreen;
+}
+
+.book-card__image img {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top: 49.5%;
+  left: 50%;
+  margin-left: -24%;
+  width: 48%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.book-card__types {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1.0625em;
+  margin: 0.15625em 0 0.1875em;
+}
+
+.book-card__types li {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  padding: 0.375em 0.0625em 0.25em;
+  text-align: center;
+  border-radius: 0.15625em;
+}
+
+.book-card__types li+li {
+  margin-left: 0.15625em;
+}
+
+.book-card__types li:first-child {
+  border-top-left-radius: 1.25em;
+  border-bottom-left-radius: 1.25em;
+}
+
+.book-card__types li:last-child {
+  border-top-right-radius: 1.25em;
+  border-bottom-right-radius: 1.25em;
+}
+
+.book-card__types span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.575em;
+  color: white;
+}
+
+/*  */
+/* Card Style Type*/
+/*  */
+
+
+.book-card[data-pokemon-type="planes"] .book-card__pokedex-year span {
+  color: #DDC9A3;
+}
+
+.book-card[data-pokemon-type="planes"] .book-card__image {
+  background: #BC955B;
+}
+
+.book-card[data-pokemon-type="planes"] .book-card__image svg polygon {
+  fill: #BC955B;
+}
+
+.book-card .book-card__types__planes {
+  background: #DDC9A3;
+}
+
+.book-card[data-pokemon-type="programas"] .book-card__pokedex-year span {
+  color: #A02142;
+}
+
+.book-card[data-pokemon-type="programas"] .book-card__image {
+  background: #691B31;
+}
+
+.book-card[data-pokemon-type="programas"] .book-card__image svg polygon {
+  fill: #691B31;
+}
+
+.book-card .book-card__types__programas {
+  background: #A02142;
+}
+
+.book-card[data-pokemon-type="acuerdos"] .book-card__pokedex-year span {
+  color: #b464a0;
+}
+
+.book-card[data-pokemon-type="acuerdos"] .book-card__image {
+  background: #f0bedc;
+}
+
+.book-card[data-pokemon-type="acuerdos"] .book-card__image svg polygon {
+  fill: #e6aac8;
+}
+
+.book-card .book-card__types__acuerdos {
+  background: #b464a0;
+}
+
+.book-card[data-pokemon-type="catálogos"] .book-card__pokedex-year span {
+  color: #e6b464;
+}
+
+.book-card[data-pokemon-type="catálogos"] .book-card__image {
+  background: #fae6be;
+}
+
+.book-card[data-pokemon-type="catálogos"] .book-card__image svg polygon {
+  fill: #f5d2a0;
+}
+
+.book-card .book-card__types__catálogos {
+  background: #e6b464;
+}
+
+.book-card[data-pokemon-type="actas"] .book-card__pokedex-year span {
+  color: #aaa064;
+}
+
+.book-card[data-pokemon-type="actas"] .book-card__image {
+  background: #e6e6be;
+}
+
+.book-card[data-pokemon-type="actas"] .book-card__image svg polygon {
+  fill: #d2d2a0;
+}
+
+.book-card .book-card__types__actas {
+  background: #aaa064;
+}
+
+.book-card[data-pokemon-type="guías"] .book-card__pokedex-year span {
+  color: #6F7271;
+}
+
+.book-card[data-pokemon-type="guías"] .book-card__image {
+  background: #98989A;
+}
+
+.book-card[data-pokemon-type="guías"] .book-card__image svg polygon {
+  fill: #98989A;
+}
+
+.book-card .book-card__types__guías {
+  background: #6F7271;
+}
+
+.book-card[data-pokemon-type="atlas"] .book-card__pokedex-year span {
+  color: #691B31;
+}
+
+.book-card[data-pokemon-type="atlas"] .book-card__image {
+  background: #A02142;
+}
+
+.book-card[data-pokemon-type="atlas"] .book-card__image svg polygon {
+  fill: #A02142;
+}
+
+.book-card .book-card__types__atlas {
+  background: #691B31;
+}
+
+.book-card[data-pokemon-type="informe"] .book-card__pokedex-year span {
+  color: #98989A;
+}
+
+.book-card[data-pokemon-type="informe"] .book-card__image {
+  background: #6F7271;
+}
+
+.book-card[data-pokemon-type="informe"] .book-card__image svg polygon {
+  fill: #6F7271;
+}
+
+.book-card .book-card__types__informe {
+  background: #98989A;
+}
+
+
+
+
+/*GridLines*/
+
+/*responsive container*/
+.container {
+  user-select: none;
+  width: 100vw;
+  height: 120vh;
+  max-width: 1536px;
+  max-height: 1000px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 75px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    top: 10px;
+  }
+
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*Switch Screen*/
+.screenframe {
+  position: absolute;
+  left: 7%;
+  top: 0;
+  right: 7%;
+  bottom: 0;
+}
+
+.inlay {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  right: 3%;
+  bottom: 4%;
+  border-radius: 2.5%;
+}
+
+.screen {
+  background: #f5f3f5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.8%;
+  box-shadow: 0px 0px 3px #98989A,
+    inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #6F7271;
+}
+
+/*  */
+/* Tooltip */
+/*  */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: #691B31;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px 8px;
+  position: absolute;
+  font-size: 12px;
+  z-index: 9999;
+
+  bottom: 125%;
+  left: 50%;
+  margin-left: -58%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #691B31 transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip-text {
+
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .tooltip-container:hover .tooltip-text {
+    opacity: 0;
+  }
+}
+
+/*  */
+/* modal */
+/*  */
+
+
+.modal-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content h2 {
+  color: #691B31;
+}
+
+.modal-content p:first-of-type {
+  text-align: justify;
+}
+
+.modal-content p:last-of-type {
+  text-transform: uppercase;
+
+  margin-bottom: 25px;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 13px 22px;
+  transition: all 0.3s ease;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #DDC9A3;
+    width: 46px;
+    height: 46px;
+    transition: width 0.8s ease;
+  }
+
+  span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    color: #111;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+
+    svg {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cta {
+    &:before {
+      display: inline-block;
+      animation: variableWidth 3s infinite;
+    }
+  }
+}
+
+@keyframes variableWidth {
+  0% {
+    width: 46px;
+  }
+
+  50% {
+    width: 70%;
+  }
+
+  100% {
+    width: 46px
+  }
+}
