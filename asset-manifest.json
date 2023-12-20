@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/BibliotecaDigitalDePlaneacion/static/css/main.a1e9c004.css",
-    "main.js": "/BibliotecaDigitalDePlaneacion/static/js/main.2a542d54.js",
+    "main.js": "/BibliotecaDigitalDePlaneacion/static/js/main.ff1261b6.js",
     "index.html": "/BibliotecaDigitalDePlaneacion/index.html",
     "main.a1e9c004.css.map": "/BibliotecaDigitalDePlaneacion/static/css/main.a1e9c004.css.map",
-    "main.2a542d54.js.map": "/BibliotecaDigitalDePlaneacion/static/js/main.2a542d54.js.map"
+    "main.ff1261b6.js.map": "/BibliotecaDigitalDePlaneacion/static/js/main.ff1261b6.js.map"
   },
   "entrypoints": [
     "static/css/main.a1e9c004.css",
-    "static/js/main.2a542d54.js"
+    "static/js/main.ff1261b6.js"
   ]
 }
