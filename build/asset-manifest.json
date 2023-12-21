@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BibliotecaDigitalDePlaneacion/static/css/main.bdabe848.css",
+    "main.js": "/BibliotecaDigitalDePlaneacion/static/js/main.15a5ad73.js",
+    "index.html": "/BibliotecaDigitalDePlaneacion/index.html",
+    "main.bdabe848.css.map": "/BibliotecaDigitalDePlaneacion/static/css/main.bdabe848.css.map",
+    "main.15a5ad73.js.map": "/BibliotecaDigitalDePlaneacion/static/js/main.15a5ad73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdabe848.css",
+    "static/js/main.15a5ad73.js"
+  ]
+}

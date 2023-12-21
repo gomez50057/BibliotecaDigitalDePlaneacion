@@ -4,7 +4,7 @@ import React, { useState, useEffect, forwardRef } from "react";
 export const Demo = ({ children }) => (
   <section className="grid-demo">
     <div className="ImgBanda" >
-      <img src="../img/banda.png" alt="Descripción de la imagen" />
+      <img src="img/banda.png" alt="Descripción de la imagen" />
     </div>
     {children}
   </section>
@@ -14,9 +14,9 @@ export const Demo = ({ children }) => (
 export const Header = ({ children }) => (
   <div className="controls">
     <div className="containerSubTiDoc">
-      <img src="../img/titulop.png" alt="Descripción de la primera imagen" style={{ marginRight: '20px', width: '30px', height: '30px' }} />
+      <img src="img/titulop.png" alt="Descripción de la primera imagen" style={{ marginRight: '20px', width: '30px', height: '30px' }} />
       <h2 className="subtitulo">DOCUMENTOS</h2>
-      <img src="../img/titulop.png" alt="Descripción de la segunda imagen" style={{ marginLeft: '20px', width: '30px', height: '30px' }} />
+      <img src="img/titulop.png" alt="Descripción de la segunda imagen" style={{ marginLeft: '20px', width: '30px', height: '30px' }} />
     </div>
     {children}
   </div>
@@ -35,15 +35,15 @@ export const BackgroundHome = ({ children }) => {
   return (
     <section className="home"
       style={{
-        backgroundImage: `url(../img/homeDigital.png)`,
+        backgroundImage: `url(img/homeDigital.png)`,
         paddingLeft: "20px",
       }}
     >
       <div className="logotipo">
-        <img src="../img/Logotipo.png" alt="Logo de la empresa" />
+        <img src="img/Logotipo.png" alt="Logo de la empresa" />
       </div>
       <div className="homeText">
-        <img src="../img/homeText.png" alt="Logo de la empresa" />
+        <img src="img/homeText.png" alt="Logo de la empresa" />
       </div>
       <button className="home-button" onClick={handleButtonClick}>
         Más información
@@ -115,7 +115,7 @@ export const AboutUs = forwardRef(({ children }, ref) => {
   return (
     <section id="aboutUs" ref={ref} className="AboutUs">
       <div className="AboutUsIMG">
-        <img src="../img/leyendo.png" alt="Logo de la empresa" />
+        <img src="img/leyendo.png" alt="Logo de la empresa" />
       </div>
       <div className="AboutUstxt">
         <p className="homeh3"> <span>Bienvenido a la Biblioteca Digital de Planeación</span>, herramienta pública para el almacenamiento y consulta de los documentos, programas, planes, informes, estudios, artículos, análisis, guías y demás instrumentos en los que participa la Unidad de Planeación y Prospectiva del Gobierno del Estado de Hidalgo.
@@ -124,9 +124,8 @@ export const AboutUs = forwardRef(({ children }, ref) => {
         </p>
         <p><span>Con la Biblioteca Digital de Planeación, contribuimos a llevar a Hidalgo a su máximo potencial.</span>    </p>
         <div className="contadorlibros">
-          <p>{count}</p>
-          <p>Total de publicaciones</p>
-          <img src="../img/librosTotal.png" alt="Logo de la empresa" />
+          <img src="img/librosTotal.png" alt="Logo de la empresa" />
+          <p>{count} <span>Publicaciones</span></p>
         </div>
       </div>
       {children}
@@ -136,29 +135,29 @@ export const AboutUs = forwardRef(({ children }, ref) => {
 
 // Featured component.
 export const Featured = ({ children }) => (
-  <section className="featured" style={{ backgroundImage: `url(../img/back.png)`, }}>
+  <section className="featured" style={{ backgroundImage: `url(img/back.png)`, }}>
     <div className="containerSubTi">
-      <img src="../img/titulop.png" alt="Descripción de la primera imagen" style={{ marginRight: '20px', width: '30px', height: '30px' }} />
+      <img src="img/titulop.png" alt="Descripción de la primera imagen" style={{ marginRight: '20px', width: '30px', height: '30px' }} />
       <h2 className="subtitulo"> PUBLICACIONES DESTACADAS</h2>
-      <img src="../img/titulop.png" alt="Descripción de la segunda imagen" style={{ marginLeft: '20px', width: '30px', height: '30px' }} />
+      <img src="img/titulop.png" alt="Descripción de la segunda imagen" style={{ marginLeft: '20px', width: '30px', height: '30px' }} />
     </div>
     {/* Contenedor de 4 elementos */}
     <div className="containerFeatured">
       {/* Contenedor 1 */}
       <div className="item">
-        <img src="../img/primer.png" alt="Item 1" />
+        <img src="img/primer.png" alt="Item 1" />
       </div>
       {/* Contenedor 2 */}
       <div className="item">
-        <img src="../img/primer.png" alt="Item 2" />
+        <img src="img/primer.png" alt="Item 2" />
       </div>
       {/* Contenedor 3 */}
       <div className="item">
-        <img src="../img/primer.png" alt="Item 3" />
+        <img src="img/primer.png" alt="Item 3" />
       </div>
       {/* Contenedor 4 */}
       <div className="item">
-        <img src="../img/primer.png" alt="Item 4" />
+        <img src="img/primer.png" alt="Item 4" />
       </div>
     </div>
     {children}
@@ -168,9 +167,9 @@ export const Featured = ({ children }) => (
 // Foouter component.
 export const Foouter = ({ children }) => (
   <section className="foouter"
-    style={{ backgroundImage: `url(../img/foouter.png)`, }}>
+    style={{ backgroundImage: `url(img/foouter.png)`, }}>
     <div className="foouterLogo">
-      <img src="../img/LogotipoBlanco.png" alt="Logo" />
+      <img src="img/LogotipoBlanco.png" alt="Logo" />
     </div>
     <div className="fooutertxt">
       <div className="foouterBar"></div>
@@ -178,7 +177,7 @@ export const Foouter = ({ children }) => (
       <div className="foouterInfo">
         <h2>Unidad de Planeación y Prospectiva</h2>
         <div className="FoouterUbicacion">
-          <img src="../img/ubicacion.png" alt="Logo" />
+          <img src="img/ubicacion.png" alt="Logo" />
           <p>Plaza Juárez S/N Col. Centro <span>Pachuca de Soto, Hidalgo, México.</span></p>
         </div>
       </div>
@@ -313,7 +312,7 @@ export const CardContent = React.memo(
         <div className="book-card-container" onClick={() => setIsModalOpen(true)}>
           <div className="book-card" data-pokemon-type={types[0]}>
             <div className="book-card__image">
-              <img src="../img/primer.png" alt={`Imagen de ${name}`} />
+              <img src="img/primer.png" alt={`Imagen de ${name}`} />
             </div>
             <Tooltip text={name}><h3 className="book-card__name">
               <span>{truncatedName}</span>

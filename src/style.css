@@ -214,34 +214,33 @@ body {
   font-size: 16px;
 }
 
-.AboutUstxt p span{
+.AboutUstxt p span {
   font-weight: 600;
 }
 
 
 
-.contadorlibros p:first-child {
+.contadorlibros p {
   font-size: 50px;
+  color: #691B31;
 }
 
-.contadorlibros p {
+.contadorlibros span {
   padding: 0;
   margin: 0;
   font-size: 20px;
-  text-align: center;
   font-weight: 700;
   color: #6F7271;
+  display: block;
 }
 
 .contadorlibros img {
-  width: 350px;
+  width: 100px;
 }
 
 .contadorlibros {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
 }
 
 
@@ -260,13 +259,16 @@ body {
     width: 250px;
   }
 
+  .AboutUstxt {
+    width: 80%;
+  }
+
   .AboutUstxt p {
-    width: 80vw;
     font-size: 12px;
   }
 
   .contadorlibros img {
-    width: 200px;
+    width: 50px;
   }
 }
 
@@ -469,6 +471,10 @@ body {
 
   .FoouterUbicacion img {
     width: 10px;
+  }
+
+  .contadorlibros p {
+    font-size: 50px;
   }
 }
 
